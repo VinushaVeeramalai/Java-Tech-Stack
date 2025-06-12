@@ -4,14 +4,14 @@ public class CurrencyConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // Scanner to get user input
 
-        // Fixed conversion rates
+        // Fixed Rates :
         double usdToInr = 83.2;
         double eurToInr = 89.5;
         double gbpToInr = 104.3;
 
         System.out.println(" Welcome to Currency Converter ");
 
-        // Input 1: User selects currency type
+        // Input 1: Selecting the currency type : By User -
         System.out.println("Choose currency to convert to INR:");
         System.out.println("1. USD to INR");
         System.out.println("2. EUR to INR");
