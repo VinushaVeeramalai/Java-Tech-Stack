@@ -2,30 +2,30 @@ import java.util.Scanner;
 
 public class CurrencyConverter {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Scanner to get user input
+        Scanner scanner = new Scanner(System.in); 
 
-        // Fixed Rates :
+        // Fixed Values:
         double usdToInr = 83.2;
         double eurToInr = 89.5;
         double gbpToInr = 104.3;
 
         System.out.println(" Welcome to Currency Converter ");
 
-        // Input 1: Selecting the currency type : By User -
+        //Step 1:
         System.out.println("Choose currency to convert to INR:");
         System.out.println("1. USD to INR");
         System.out.println("2. EUR to INR");
         System.out.println("3. GBP to INR");
         System.out.print("Enter your choice (1-3): ");
-        int choice = scanner.nextInt(); // Reads currency choice from user
+        int choice = scanner.nextInt(); 
 
-        // Input 2: User enters amount
+       //Step 2:
         System.out.print("Enter amount to convert: ");
-        double amount = scanner.nextDouble(); // Reads amount from user
+        double amount = scanner.nextDouble(); 
 
         double result = 0.0;
 
-        // Conversion logic
+        // Conversion :
         switch (choice) {
             case 1:
                 result = amount * usdToInr;
@@ -43,6 +43,6 @@ public class CurrencyConverter {
                 System.out.println("Invalid choice.");
         }
 
-        scanner.close(); // Close input stream
+        scanner.close(); 
     }
 }
