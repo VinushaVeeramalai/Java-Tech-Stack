@@ -9,7 +9,7 @@ public class CurrencyConverter {
         double eurToInr = 89.5;
         double gbpToInr = 104.3;
 
-        System.out.println("💱 Welcome to Currency Converter 💱");
+        System.out.println(" Welcome to Currency Converter ");
 
         // Input 1: User selects currency type
         System.out.println("Choose currency to convert to INR:");
