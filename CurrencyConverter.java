@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class CurrencyConverter {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); 
+        Scanner sc = new Scanner(System.in); 
 
         // Fixed Values:
         double usdToInr = 83.2;
@@ -17,11 +17,11 @@ public class CurrencyConverter {
         System.out.println("2. EUR to INR");
         System.out.println("3. GBP to INR");
         System.out.print("Enter your choice (1-3): ");
-        int choice = scanner.nextInt(); 
+        int choice = sc.nextInt(); 
 
        //Step 2:
         System.out.print("Enter amount to convert: ");
-        double amount = scanner.nextDouble(); 
+        double amount = sc.nextDouble(); 
 
         double result = 0.0;
 
@@ -43,6 +43,6 @@ public class CurrencyConverter {
                 System.out.println("Invalid choice.");
         }
 
-        scanner.close(); 
+        sc.close(); 
     }
 }
